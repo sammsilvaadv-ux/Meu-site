@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { contact, legalNotice } from '@/lib/contact'
 import { trackEmailClick, trackPhoneClick } from '@/lib/gtm'
 
@@ -27,16 +28,17 @@ export function Footer() {
       <div className="container-site py-14 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
 
-          {/* Col 1 — Marca */}
+          {/* Col 1 — Logo */}
           <div className="space-y-4">
-            <div>
-              <p className="font-display text-white text-xl font-semibold tracking-tight">
-                Samuel Martins
-              </p>
-              <p className="font-body text-gold text-[10px] uppercase tracking-[0.18em] font-medium">
-                Advocacia
-              </p>
-            </div>
+            <Link href="/" aria-label="Samuel Martins Advocacia — página inicial">
+              <Image
+                src="/logo-branco.png"
+                alt="Samuel Martins Assessoria Jurídica"
+                width={180}
+                height={60}
+                className="h-12 w-auto object-contain"
+              />
+            </Link>
             <p className="text-sm leading-relaxed text-white/70">
               Advocacia especializada em Direito Previdenciário e do Consumidor, com presença na Baixada Fluminense.
             </p>

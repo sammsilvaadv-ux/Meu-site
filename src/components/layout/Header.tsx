@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { contact } from '@/lib/contact'
@@ -37,7 +38,6 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Fechar menu ao mudar de rota
   useEffect(() => { setMobileOpen(false) }, [pathname])
 
   function handleWhatsApp() {
@@ -57,14 +57,16 @@ export function Header() {
     >
       <div className="container-site flex items-center justify-between h-16 md:h-18">
 
-        {/* Wordmark */}
-        <Link href="/" className="flex flex-col leading-none group">
-          <span className="font-display text-primary font-semibold text-lg tracking-tight group-hover:text-primary-deep transition-colors">
-            Samuel Martins
-          </span>
-          <span className="font-body text-gold text-[10px] uppercase tracking-[0.18em] font-medium">
-            Advocacia
-          </span>
+        {/* Logo */}
+        <Link href="/" className="flex items-center group" aria-label="Samuel Martins Advocacia — página inicial">
+          <Image
+            src="/logo-color.png"
+            alt="Samuel Martins Assessoria Jurídica"
+            width={160}
+            height={52}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Nav desktop */}
