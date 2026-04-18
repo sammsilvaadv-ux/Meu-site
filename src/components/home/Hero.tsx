@@ -41,10 +41,9 @@ export function Hero() {
 
             {/* Subtítulo */}
             <p className="text-lg text-muted leading-relaxed max-w-xl">
-              Atendemos pessoas em Duque de Caxias e região que buscam
-              orientação jurídica séria, clara e ética para defender seus
-              direitos em questões previdenciárias, consumeristas,
-              imobiliárias e familiares.
+              Orientação jurídica séria, clara e ética para quem busca defender
+              seus direitos — seja no Estado do Rio de Janeiro ou em qualquer
+              parte do Brasil.
             </p>
 
             {/* CTAs */}
@@ -70,7 +69,6 @@ export function Hero() {
             aria-hidden
           >
             <div className="relative">
-              {/* Círculo com logo */}
               <div className="w-72 h-72 rounded-full border border-border/60 flex items-center justify-center bg-white shadow-card">
                 <Image
                   src="/logo-color.png"
@@ -81,9 +79,7 @@ export function Hero() {
                   priority
                 />
               </div>
-              {/* Anel externo */}
               <div className="absolute inset-0 -m-4 rounded-full border border-gold/20" />
-              {/* Anel mais externo */}
               <div className="absolute inset-0 -m-10 rounded-full border border-border/40" />
             </div>
           </div>
