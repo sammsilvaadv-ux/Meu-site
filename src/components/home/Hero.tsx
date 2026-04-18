@@ -34,8 +34,8 @@ export function Hero() {
             {/* H1 */}
             <h1 className="text-hero text-primary text-balance leading-tight">
               Assessoria jurídica especializada em{' '}
-              <span className="text-gold">Direito Previdenciário</span>{' '}
-              e do Consumidor
+              <span className="text-gold">Direito Imobiliário, Previdenciário</span>{' '}
+              e de Família
             </h1>
 
             {/* Subtítulo */}
