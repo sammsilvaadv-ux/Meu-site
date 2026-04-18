@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { WhatsAppCTA } from '@/components/shared/CTAButton'
 import Link from 'next/link'
 
@@ -63,29 +64,22 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Coluna decorativa */}
+          {/* Coluna decorativa com logo */}
           <div
             className="hidden lg:flex items-center justify-center"
             aria-hidden
           >
             <div className="relative">
-              {/* Monograma decorativo */}
+              {/* Círculo com logo */}
               <div className="w-72 h-72 rounded-full border border-border/60 flex items-center justify-center bg-white shadow-card">
-                <div className="text-center space-y-2">
-                  <p
-                    className="font-display text-primary leading-none select-none"
-                    style={{ fontSize: '5rem', fontWeight: 700 }}
-                  >
-                    SM
-                  </p>
-                  <div className="w-12 h-px bg-gold mx-auto" />
-                  <p className="font-body text-muted text-[10px] uppercase tracking-[0.2em]">
-                    Advocacia
-                  </p>
-                  <p className="font-body text-muted/70 text-[9px] uppercase tracking-widest">
-                    OAB/RJ 234.345
-                  </p>
-                </div>
+                <Image
+                  src="/logo-color.png"
+                  alt="Samuel Martins Assessoria Jurídica"
+                  width={200}
+                  height={200}
+                  className="w-48 h-48 object-contain"
+                  priority
+                />
               </div>
               {/* Anel externo */}
               <div className="absolute inset-0 -m-4 rounded-full border border-gold/20" />
