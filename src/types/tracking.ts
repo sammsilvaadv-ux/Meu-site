@@ -9,6 +9,7 @@ export interface UTMParams {
 }
 
 export interface TrackingData extends UTMParams {
+  [key: string]: string | undefined
   landing_page?: string
   current_page?: string
   referrer?: string
