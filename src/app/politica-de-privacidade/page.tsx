@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 }
 
 export default function PoliticaPrivacidadePage() {
-  const year = new Date().getFullYear()
-
   return (
     <>
       <section className="bg-surface pt-28 pb-10 md:pt-36 md:pb-14">
@@ -22,7 +20,7 @@ export default function PoliticaPrivacidadePage() {
             <span className="text-primary font-medium">Política de Privacidade</span>
           </nav>
           <h1 className="text-hero text-primary">Política de Privacidade</h1>
-          <p className="text-muted text-sm mt-3">Última atualização: janeiro de {year}</p>
+          <p className="text-muted text-sm mt-3">Última atualização: outubro de 2026</p>
           <div className="gold-divider mt-5" />
         </div>
       </section>
@@ -85,6 +83,20 @@ export default function PoliticaPrivacidadePage() {
           </div>
 
           <div className="space-y-4">
+            <h2>Instagram e atendimento de comentários</h2>
+            <p>O escritório utiliza o aplicativo <strong>Samuel Martins Atendimento</strong>, integrado à API do Instagram (Meta), para receber e responder comentários feitos nas publicações do perfil <strong>@samuelmartins.adv</strong>. Por esse canal, tratamos:</p>
+            <ul>
+              <li>Nome de usuário e identificador público da conta que comentou</li>
+              <li>Texto do comentário, publicação comentada e data e hora</li>
+              <li>Conteúdo de mensagens que você nos enviar por mensagem direta</li>
+            </ul>
+            <p>Esses dados são usados apenas para responder ao seu comentário ou mensagem, atender pedidos de contato (inclusive encaminhando a conversa para o WhatsApp do escritório, quando você solicitar) e moderar spam ou conteúdo ofensivo. As bases legais são os procedimentos preliminares a contrato a pedido do titular e o legítimo interesse do escritório (art. 7º, V e IX, da LGPD).</p>
+            <p>Os comentários podem ser organizados e ter respostas redigidas com o auxílio de um assistente de inteligência artificial (Claude, da Anthropic), sob supervisão do advogado responsável. Nenhuma decisão com efeitos jurídicos sobre você é tomada de forma exclusivamente automatizada, e orientação jurídica só é prestada pelo advogado, em canal reservado.</p>
+            <p>Para essa finalidade, os dados são tratados pela Meta (plataforma Instagram), pela Anthropic (assistente de inteligência artificial) e por provedores de conexão segura da aplicação, alguns deles com servidores fora do Brasil, nas hipóteses do art. 33 da LGPD. As cópias usadas no atendimento são mantidas por no máximo 90 dias, salvo início de relação contratual ou obrigação legal.</p>
+            <p>Comentários no Instagram são públicos. Por isso, pedimos que você <strong>não descreva detalhes do seu caso nos comentários</strong>: o atendimento jurídico acontece em canal reservado e protegido pelo sigilo profissional.</p>
+          </div>
+
+          <div className="space-y-4">
             <h2>Seus direitos (LGPD — Lei 13.709/2018)</h2>
             <p>Você tem direito a:</p>
             <ul>
@@ -95,6 +107,17 @@ export default function PoliticaPrivacidadePage() {
               <li>Revogar o consentimento a qualquer momento</li>
             </ul>
             <p>Para exercer qualquer desses direitos, entre em contato por e-mail: <a href={contact.email.href} className="text-primary hover:text-gold transition-colors">{contact.email.address}</a></p>
+          </div>
+
+          <div id="exclusao-de-dados" className="space-y-4 scroll-mt-28">
+            <h2>Exclusão de dados</h2>
+            <p>Para pedir a exclusão dos seus dados tratados pelo escritório, inclusive os recebidos pelo Instagram:</p>
+            <ul>
+              <li>Envie um e-mail para <a href={contact.email.href} className="text-primary hover:text-gold transition-colors">{contact.email.address}</a> com o assunto <strong>&quot;Exclusão de dados&quot;</strong>, ou uma mensagem pelo WhatsApp {contact.whatsapp.display}.</li>
+              <li>Se o pedido for sobre o Instagram, informe o seu nome de usuário e, se possível, o comentário ou a mensagem em questão.</li>
+              <li>Responderemos em até 15 dias, confirmando a exclusão dos registros mantidos pelo escritório.</li>
+            </ul>
+            <p>Comentários publicados no Instagram também podem ser apagados por você diretamente no aplicativo, ou removidos por nós das nossas publicações, a seu pedido. Só manteremos dados cuja guarda seja exigida por lei, e informaremos isso na resposta.</p>
           </div>
 
           <div className="space-y-4">
